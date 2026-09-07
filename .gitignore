@@ -1,0 +1,51 @@
+# Dart and Flutter generated files
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.pub/
+*.dart.js
+*.info.json
+*.js.deps
+*.js.map
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/captures/
+*.iml
+*.jks
+*.keystore
+
+# iOS and macOS
+**/ios/Pods/
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/App.framework/
+**/macos/Pods/
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Archives and binaries
+*.zip
+*.rar
+*.apk
+*.aab
+*.ipa
+
+# Instructor files, never published
+docs/setup_checklist.md
+tasks/README.md
+instructor_private/
