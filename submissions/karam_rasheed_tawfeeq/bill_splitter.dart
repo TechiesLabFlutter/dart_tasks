@@ -7,12 +7,16 @@ void main() {
   int noOfPeople = int.parse(stdin.readLineSync()!);
 
   stdout.write("Enter the bill amount: ");
-  int bill = int.parse(stdin.readLineSync()!);
+  double bill = double.parse(stdin.readLineSync()!);
 
   stdout.write("Enter the tip percentage: ");
   double tip = double.parse(stdin.readLineSync()!);
 
-  splitBill(total: bill.toDouble(), people: noOfPeople, tipPercent: tip);
+  if (noOfPeople <= 0 || bill < 0 || tip < 0) {
+    print('Invalid input! Please enter positive values.');
+    return;
+  }
+  splitBill(total: bill, people: noOfPeople, tipPercent: tip);
 }
 
 splitBill({
